@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A8AECDC-8F5D-4E17-B90E-BEEC4958BA3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>C:\Users\VivoBook\Downloads\Krypton-master\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.29\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=8.0.29.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 8.0.29\Assemblies\v4.5.2\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cancelticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelticket.Designer.cs">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choosest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosest.Designer.cs">
+      <DependentUpon>choosest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="choosebogie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="choosebogie.Designer.cs">
+      <DependentUpon>choosebogie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edittickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edittickets.Designer.cs">
+      <DependentUpon>edittickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgetpw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgetpw.Designer.cs">
+      <DependentUpon>forgetpw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="datauser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="datauser.Designer.cs">
+      <DependentUpon>datauser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tickets.Designer.cs">
+      <DependentUpon>tickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="members.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="members.Designer.cs">
+      <DependentUpon>members.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logins.Designer.cs">
+      <DependentUpon>logins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="cancelticket.resx">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosebogie.resx">
+      <DependentUpon>choosebogie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="choosest.resx">
+      <DependentUpon>choosest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="datauser.resx">
+      <DependentUpon>datauser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edittickets.resx">
+      <DependentUpon>edittickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgetpw.resx">
+      <DependentUpon>forgetpw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tickets.resx">
+      <DependentUpon>tickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="logins.resx">
+      <DependentUpon>logins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="members.resx">
+      <DependentUpon>members.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-train-train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8571.png_860.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Train_Icon_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รถไฟมันมีหลายราง แต่ถ้ามีเธอข้างๆ เราไม่มีหลายใจ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รถไฟมันมีหลายราง แต่ถ้ามีเธอข้างๆ เราไม่มีหลายใจ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thailand.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-train-cartoon-png-image_1110648.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\w644.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2_resize-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MG_4102-2-1024x682.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Architecture_Window_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-chair-computer-icons-seat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-chair-computer-icons-seat1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\280290963_848629059431132_5941502794218549388_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car_seat_icon_137808.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16a7ef72-7003-41ae-b04d-f11398d665ea.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pvrvkr7tlwjQALJkhhh-o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\82f64514-db42-4e82-bf7c-4e6bda717e70.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\285361123_1921706731348406_7288956600754255673_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\285361123_1921706731348406_7288956600754255673_n1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\285361123_1921706731348406_7288956600754255673_n2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\รถไฟไทย.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-11551053572so3ctmz3mx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\-11551053572so3ctmz3mx-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-cute-cartoon-flower-png-image_4076149-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลืมรหัสผ่านเบ๋อ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-scalable-graphics-symbol-eye-icon-logo-black-thumbnail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-scalable-graphics-symbol-eye-icon-logo-black-thumbnail-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-scalable-graphics-symbol-eye-icon-logo-black-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-human-eye-computer-icons-symbol-eye-examination-eyelashes-icon-5b56a0ca0845e0.0569646415324039140339.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ดีไซน์ที่ไม่มีชื่อ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\การรถไฟแห่ง ประเทศน้องนีแลนด์.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ยกเลิก การจองตั๋ว.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ยกเลิก การจองตั๋ว %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เลือกตู้+ที่นั่ง.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\สมัครสมาชิก.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เข้าสู่ระบบ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เลือกขบวนโดยสาร.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\เลือกขบวนโดยสาร %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ประวัติการจองตั๋ว.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ลืมรหัสผ่าน.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ADMIN %284%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
